@@ -29,7 +29,7 @@ qa_pipeline(
 
 * Named Entity Recognition
 
-```
+```python
 from transformers import pipeline
 
 
