@@ -1,4 +1,17 @@
 
+## Transfer Learning
+
+The idea of transfer learning is to take a pre-trained model and use it (adapt it) to a new task. Because pre-training the model is quite expensive, transfer learning  exploits the knowledge gained from a previous task to boost the performance on a related task with lower costs.
+
+
+## Truncation & Padding
+
+Batched inputs are often different lengths and can’t be converted to fixed-size tensors.
+Truncation and Padding are strategies for make the text input the same length.
+
+* Padding adds a special padding token to extend shorter sequences to a fixed length.
+* Truncation works in the other direction by truncating long sequences to a fixed length.
+
 
 ## Hallucinations 
 

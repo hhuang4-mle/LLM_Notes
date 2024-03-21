@@ -17,14 +17,21 @@
 
 * Load a pre-trained model to train with PEFT (LoRA)
 
+```bash
+pip install peft
+```
+
 ```python
 from peft import get_peft_model, LoraConfig, TaskType
+from transformers import AutoModelForSeq2SeqLM
+
+model_name = "t5-base"
 
 peft_config = LoraConfig(
     task_type=TaskType.SEQ_2_SEQ_LM, inference_mode=False, r=8, lora_alpha=32, lora_dropout=0.1
 )
 
-model = AutoModelForSeq2SeqLM.from_pretrained(model_name_or_path)
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 model = get_peft_model(model, peft_config)
 ...
 model.save_pretrained("output_dir") 
@@ -55,6 +62,11 @@ model = PeftModel.from_pretrained(model, peft_model_id)
 
 [TRL](https://huggingface.co/docs/trl/en/index) is a full stack library providing a set of tools to train transformer language models with Reinforcement Learning. (e.g. Supervised Fine-tuning step (SFT), Reward Modeling step (RM), Proximal Policy Optimization (PPO)).
 
+```bash
+pip install datasets
+pip install trl
+```
+
 ```python
 from datasets import load_dataset
 from trl import SFTTrainer
@@ -70,3 +82,9 @@ trainer = SFTTrainer(
 trainer.train()
 
 ```
+
+
+### More materials to read
+
+* [https://github.com/ShawhinT/YouTube-Blog/tree/main/LLMs](https://github.com/ShawhinT/YouTube-Blog/tree/main/LLMs)
+
