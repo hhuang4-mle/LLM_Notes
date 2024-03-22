@@ -7,3 +7,4 @@ Notes about learning LLM
 * [Model Training](training.md)
 * [LLM Models](models.md)
 * [LangChain](langchain.md)
+* [Evaluation](evaluation.md)
