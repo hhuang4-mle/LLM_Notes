@@ -41,7 +41,7 @@ More recent LLM models now can achieve much higher accuracy on the HellaSwag dat
 
 ## TruthfulQA
 
-LLM models have a tendency to generate false statements. The false statements range from subtle inaccuracies to wild hallucinations. The purpose of TruthfulQA dataset is to measure how truthful models are. The dataset is benchmark to measure whether a language model is truthful in generating answers to questions.
+LLM models have a tendency to generate false statements. The false statements range from subtle inaccuracies to wild hallucinations. The purpose of [TruthfulQA](https://github.com/sylinrl/TruthfulQA) dataset is to measure how truthful models are. The dataset is benchmark to measure whether a language model is truthful in generating answers to questions.
 
 The dataset comprises 817 questions that span 38 categories.
 
@@ -77,3 +77,38 @@ More resources of the dataset can be found [here](https://github.com/sylinrl/Tru
 
 ---
 
+## MMLU
+
+[MMLU](https://paperswithcode.com/dataset/mmlu) (Massive Multitask Language Understanding) is a massive multitask test-set consisting of multiple-choice questions from various branches of knowledge. The topics include humanities, social sciences, hard sciences, and other important areas (57 tasks spreading over 15,908 questions in total).
+
+A few sample test case from the MMLU are listed below.
+
+### Example 1 - High School Science Question
+
+**Question**
+
+> In 1783, Europe was unusually cold and foggy. The rain was acidic. Which event most likely caused the unusual climate in Europe that year?
+
+**Options**
+
+> - A logging company deforested millions of acres in South America.
+> - A major earthquake and tsunami changed the path of the Gulf Stream.
+> - A major volcanic eruption released ash and sulfur gas into the atmosphere.
+> - An increase in the use of automobiles released more carbon dioxide into the atmosphere.
+
+### Example 2 - High School Mathematics Question
+
+**Question**
+
+> If a pentagon P with vertices at (– 2, – 4), (– 4, 1), (–1, 4), (2, 4), and (3, 0) is reflected across the line y = x to get a new pentagon, P’, then one of the vertices of P’ is _____.
+
+**Options**
+
+> - (0, – 3)
+> - (4, 1)
+> - (2, 2)
+> - (– 4, –2)
+
+This dataset was pulished on 2021. At that time, most recent models had near random-chance accuracy. The author states that for GPT-3, 9 out of the 10 lowest-accuracy tasks are STEM subjects that emphasize mathematics or calculations. The highest score for GPT-3’s was an accuracy of 69% for US Foreign Policy. Overall, UnifiedQA did best on marketing, with an accuracy of 82.5%.
+
+More recent models such as GPT-4 now performs a lot better. For instance, GPT-4 reaches an average accuracy of 86.4% on the dataset, and Google's Gemini Ultra achieves 90%. A list of ranking can be found [here](https://paperswithcode.com/sota/multi-task-language-understanding-on-mmlu).
