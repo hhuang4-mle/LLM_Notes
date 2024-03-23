@@ -6,20 +6,26 @@
 
 Sample question from HellaSwag.
 
-#### Example 1
+### Example 1
 
-```
-[Context]
-A tray of potatoes is loaded into the oven and removed. A large tray of cake is flipped over and placed on counter. A large tray of meat _____.
 
-[Options]
-A. is poured into a midden.
-B. is placed onto a baked potato.
-C. and pickles are placed in the oven.
-D. is prepared then it is removed from the oven by a helper when done.
-```
+**Context**
 
-#### Example 2
+> A tray of potatoes is loaded into the oven and removed. A large tray of cake is flipped over and placed on counter. A large tray of meat _____.
+
+**Options**
+
+> A. is poured into a midden.
+
+> B. is placed onto a baked potato.
+
+> C. and pickles are placed in the oven.
+
+> D. is prepared then it is removed from the oven by a helper when done.
+
+
+
+### Example 2
 
 ```
 [Context]
