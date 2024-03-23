@@ -16,11 +16,8 @@ Sample question from HellaSwag.
 **Options**
 
 > A. is poured into a midden.
-
 > B. is placed onto a baked potato.
-
 > C. and pickles are placed in the oven.
-
 > D. is prepared then it is removed from the oven by a helper when done.
 
 
