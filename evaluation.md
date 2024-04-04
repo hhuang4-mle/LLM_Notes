@@ -112,3 +112,58 @@ A few sample test case from the MMLU are listed below.
 This dataset was pulished on 2021. At that time, most recent models had near random-chance accuracy. The author states that for GPT-3, 9 out of the 10 lowest-accuracy tasks are STEM subjects that emphasize mathematics or calculations. The highest score for GPT-3’s was an accuracy of 69% for US Foreign Policy. Overall, UnifiedQA did best on marketing, with an accuracy of 82.5%.
 
 More recent models such as GPT-4 now performs a lot better. For instance, GPT-4 reaches an average accuracy of 86.4% on the dataset, and Google's Gemini Ultra achieves 90%. A list of ranking can be found [here](https://paperswithcode.com/sota/multi-task-language-understanding-on-mmlu).
+
+---
+
+## WinoGrande
+
+The previous benchmark dataset, Winograd Schema Challenge (WSC), is a dataset designed for commonsense reasoning with 273 expert-crafted pronoun resolution problems. As the recent LLM model already reached over 90% accuracy on WSC, WinoGrande is then introduced. 
+
+[WinoGrande](https://winogrande.allenai.org/) is a large-scale dataset of 44k problems. It is adjusted to improve both the scale and the hardness of the WSC.
+
+A few sample test case from the WinoGrande are listed below.
+
+### Example 1
+
+**Question**
+
+> Donald was poorer than Leslie was because companies had found oil on the property of _____. 
+> 
+> A. Donald 
+> B. Leslie
+
+**Answer**: B
+
+
+### Example 2
+
+**Question**
+
+> Jeffrey is unable to spend more money than Aaron because _____ earns a lot less. 
+> 
+> A. Jeffrey 
+> B. Aaron
+
+**Answer**: A
+
+
+### Example 3
+
+**Question**
+
+> Christopher bought new crystal plates from Kevin because _____ wanted to give it for a gift on Christmas.
+> 
+> A. Christopher
+> B. Kevin
+
+**Answer**: A
+
+
+So far, ST-MoE-32B 269B is the model achieving highest accuracy (96.1) on WinoGrande. Most well known models can reach an accuracy higher than 80 percent. For example, 
+
+* The accuracy of GPT-3.5 on WinoGrande is 81.6
+* The accuracy of GPT-4 on WinoGrande is 87.5
+* The accuracy of Claude 3 Opus on WinoGrande is 88.5
+
+A list of ranking can be found [here](https://huggingface.co/datasets/winogrande/viewer).
+
