@@ -129,8 +129,8 @@ A few sample test case from the WinoGrande are listed below.
 
 > Donald was poorer than Leslie was because companies had found oil on the property of _____. 
 > 
-> A. Donald 
-> B. Leslie
+> - A. Donald 
+> - B. Leslie
 
 **Answer**: B
 
@@ -141,8 +141,8 @@ A few sample test case from the WinoGrande are listed below.
 
 > Jeffrey is unable to spend more money than Aaron because _____ earns a lot less. 
 > 
-> A. Jeffrey 
-> B. Aaron
+> - A. Jeffrey 
+> - B. Aaron
 
 **Answer**: A
 
@@ -153,17 +153,16 @@ A few sample test case from the WinoGrande are listed below.
 
 > Christopher bought new crystal plates from Kevin because _____ wanted to give it for a gift on Christmas.
 > 
-> A. Christopher
-> B. Kevin
+> - A. Christopher
+> - B. Kevin
 
 **Answer**: A
 
+More samples from the dataset can be found [here](https://huggingface.co/datasets/winogrande/viewer).
 
 So far, ST-MoE-32B 269B is the model achieving highest accuracy (96.1) on WinoGrande. Most well known models can reach an accuracy higher than 80 percent. For example, 
 
 * The accuracy of GPT-3.5 on WinoGrande is 81.6
 * The accuracy of GPT-4 on WinoGrande is 87.5
 * The accuracy of Claude 3 Opus on WinoGrande is 88.5
-
-A list of ranking can be found [here](https://huggingface.co/datasets/winogrande/viewer).
 
