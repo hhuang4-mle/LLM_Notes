@@ -3,7 +3,6 @@
 
 The idea of transfer learning is to take a pre-trained model and use it (adapt it) to a new task. Because pre-training the model is quite expensive, transfer learning  exploits the knowledge gained from a previous task to boost the performance on a related task with lower costs.
 
-
 ## Truncation & Padding
 
 Batched inputs are often different lengths and can’t be converted to fixed-size tensors.
